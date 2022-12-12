@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <style>
+        img {
+            width: 25px;
+            border-radius: 1pc;
+        }
+
+        .all {
+            width: 290px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="#" style="color: rgb(255, 141, 141);">Airbnb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="">
+                    <button class="btn shadow rounded-4 py-2 px-4 border" type="submit">Anywhere
+                        &nbsp;&nbsp;|&nbsp;&nbsp; Any Week
+                        &nbsp;&nbsp;|&nbsp;&nbsp; Add Guests
+                        <i class="bi bi-search p-2 rounded-4" style="background: rgb(255, 141, 141);"></i></button>
+                </form>
+                <form class="d-flex" role="search">
+                    <p style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" class="pt-lg-1">
+                        Airbnb your Home
+                    </p>
+                    <!-- Button trigger modal -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown me-5 ms-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Other Projects
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="whatsapp.html">WhatsApp</a></li>
+                            <li><a class="dropdown-item" href="ipage.html">iPage</a></li>
+                            <li><a class="dropdown-item" href="instarcart.html">Instacart</a></li>
+                            <li><a class="dropdown-item" href="firebase.html">Firebase</a></li>
+                            <li><a class="dropdown-item" href="index.html">Meta</a></li>
+                            <li><a class="dropdown-item" href="airbnb.html">Airbnb</a></li>
+                            <li><a class="dropdown-item" href="hostinger.html">hostinger</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <div class="container " style="overflow-x: scroll;">
+        <p class="d-flex"><img src="images/1bn.jpg" alt=""></span><span><img src="images/1bn.jpg"></p>
+    </div> -->
+    <!-- <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <span class="small">
+                    <img src="images/1bn.jpg" style="padding-left: 10px; width: 2pc;" alt="..."><br>
+                    Amazing pools
+                </span>
+                <img src="images/4bn.jpg" style="padding: 10px; width: 2pc;" alt="">
+                <img src="images/5bn.jpg" style="padding: 10px; width: 2pc;" alt="">
+                <img src="images/6bn.jpg" style="padding: 10px; width: 2pc;" alt="">
+                <img src="images/7bn.jpg" style="padding: 10px; width: 2pc;" alt="">
+                <img src="images/8bn.jpg" style="padding: 10px; width: 2pc;" alt="">
+                <img src="images/9bn.jpg" style="padding: 10px; width: 2pc;" alt="">
+                <img src="images/10bn.jpg" style="padding: 1px; width: 2pc;" alt="">
+                <img src="images/11bn.jpg" style="padding: 1px; width: 2pc;" alt="">
+                <img src="images/12bn.jpg" style="padding: 1px; width: 2pc;" alt="">
+                <img src="images/13bn.jpg" style="padding: 1px; width: 2pc;" alt="">
+                <img src="images/14bn.jpg" style="padding: 1px; width: 2pc;" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="images/2bn.jpg" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3bn.jpg" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <div class="container-fluid p-4 px-5">
+        <div class="row">
+            <div class="col">
+                <div id="c1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/1bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/3bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/4bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/5bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/6bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/7bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/8bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/9bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/11bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/12bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/13bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/14bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/12bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="images/11bnb.webp" class="all" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/13bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/14bnb.webp" class="all" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-4 px-5">
+        <div class="row">
+            <div class="col">
+                <div id="c5" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/1bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/3bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/4bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/5bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c5" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c5" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c6" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/6bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/7bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/8bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/9bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c6" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c6" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c7" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/11bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/12bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/13bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/14bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c7" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c7" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c8" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/12bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="images/11bnb.webp" class="all" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/13bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/14bnb.webp" class="all" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c8" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c8" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-4 px-5">
+        <div class="row">
+            <div class="col">
+                <div id="c9" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/1bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/3bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/4bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/5bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c9" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c9" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c10" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/6bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/7bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/8bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/9bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c10" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c10" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c11" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="images/11bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/12bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/13bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/14bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c11" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c11" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="c12" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/12bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/10bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="images/11bnb.webp" class="all" alt="...">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/13bnb.webp" class="all" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/14bnb.webp" class="all" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#c12" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#c12" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="lh-sm">
+                    <p>Marrakesh, Morocco</p>
+                    <p class="text-muted">
+                        3,040 Kilometers away <br>
+                        Jan 26-31
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="position-sticky bottom-0 bg-light">
+        <div class="container-fluid shadow-lg py-2">
+            <div class="row px-lg-5 px-3">
+                <span class="col-lg">
+                    <span>© 2022 Airbnb, Inc.·</span>&nbsp;&nbsp;&nbsp;
+                    <span>Privacy</span>&nbsp;&nbsp;&nbsp;
+                    <span>Terms</span>&nbsp;&nbsp;&nbsp;
+                    <span>Sitemap</span>&nbsp;&nbsp;&nbsp;
+                    <span>·Destinations</span>
+                </span>
+                <span class="col-lg  d-flex  justify-content-end">
+                    <span>English (US)</span>&nbsp;&nbsp;&nbsp;
+                    <span>$USD</span>&nbsp;&nbsp;&nbsp;
+                    <span style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                        Support & resources<i class="bi bi-arrow-up-short"></i>
+                    </span>
+                    <div class="offcanvas offcanvas-bottom h-50 rounded-top" tabindex="-1" id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body small container">
+                            <div class="row">
+                                <div class="col">
+                                    <h6>Support</h6>
+                                    <p>Help Center</p>
+                                    <p>AirCover</p>
+                                    <p>Supporting people with disabilities</p>
+                                    <p>Cancellation options</p>
+                                    <p>Our COVID-19 Response</p>
+
+                                </div>
+                                <div class="col">
+                                    <h6>Support</h6>
+                                    <p>Help Center</p>
+                                    <p>AirCover</p>
+                                </div>
+                                <div class="col">
+                                    <h6>Support</h6>
+                                    <p>Help Center</p>
+                                    <p>AirCover</p>
+                                    <p>Supporting people with disabilities</p>
+                                    <p>Cancellation options</p>
+                                    <p>Our COVID-19 Response</p>
+                                </div>
+                                <div class="col">
+                                    <h6>Support</h6>
+                                    <p>Help Center</p>
+                                    <p>AirCover</p>
+                                    <p>Supporting people with disabilities</p>
+                                    <p>Cancellation options</p>
+                                    <p>Our COVID-19 Response</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
