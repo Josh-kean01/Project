@@ -21,8 +21,7 @@
     #mko {
       background-image: url(images/1m.jpg);
       width: 100%;
-      overflow: hidden;
-      margin-top: -10px;
+      overflow-x: hidden;
     }
 
     .ain h2 {
@@ -120,8 +119,9 @@
 
         <a href="#" style="color:black; text-decoration: none; font-size: small; font-weight: 510;">Store Help
           Center</a>
-        <button href="#" class="btn btn-link float-end me-3" style="color: black; text-decoration: wavy;">Find
-          Orders</button>
+        <button href="#" class="btn btn-link float-end me-3" style="color: black; text-decoration: wavy;">
+          Find Orders
+        </button>
       </nav>
       <hr>
       <div class="p-3 pb-3 pt-0" style="font-size: small;">
@@ -154,11 +154,13 @@
     <nav class="navbar bg-light sticky-top always shadow">
       <div class="container-fluid py-2" style="border-bottom: 1px solid grey;">
         <img src="images/9m.svg" alt="logo">
-        <button href="#" class="btn btn-link float-end me-3" style="color: black; text-decoration: wavy;">Find
-          Orders</button>
+        <button href="#" class="btn btn-link float-end me-3" style="color: black; text-decoration: wavy;">
+          Find Orders
+        </button>
       </div>
       <div class="container-fluid py-2">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar">
           <iconify-icon icon="line-md:close-to-menu-transition"></iconify-icon>
         </button>
         <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -769,7 +771,7 @@
     <div class="container-fluid px-3 py-5">
       <div class="row" style="color: rgb(139, 139, 139)">
         <div class="col-lg-4 py-3">
-          <a href="#" style="color: grey;">English (US)</a>
+          <a href="#" style="color: #7A98A4; text-decoration: none;">English (US)</a>
         </div>
 
         <div class="col py-3" style="font-size: small">
@@ -868,7 +870,7 @@
     let a = new Date().getHours();
 
     if (a < 12) {
-      window.alert("Welcome User\nGood Morning\n\nThis is a Student Project and not an Attempt to clone the the existing Webpage")
+      alert("Welcome User\nGood Morning\n\nThis is a Student Project and not an Attempt to clone the the existing Webpage")
     }
     else if (a == 12) {
       alert("Welcome User\nGood Day\n\nThis is a Student Project and not an Attempt to clone the the existing Webpage")
