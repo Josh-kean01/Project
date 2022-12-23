@@ -622,6 +622,7 @@
         if (!document.myForm.a.value.match(a)) {
           // alert("Username is required")
           document.myForm.a.focus();
+          document.myForm.a.style.border="1px solid red"
           return false;
         }
         if (!document.myForm.b.value.match(b)) {
